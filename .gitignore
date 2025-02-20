@@ -1,5 +1,17 @@
-venv/
+# Byte-compiled / optimized / DLL files
+*.py[cod]
 __pycache__/
-*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+
+# Django specific
+*.log
 db.sqlite3
+
+# macOS files
+.DS_Store
+
+# VS Code settings
 .vscode/

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+{% extends "home/layout.html" %} {% block title %}Dashboard{%endblock %} 
+
+{% block content %}
+
+<div class="container">
+  <!-- Dashboard Title -->
+  <div class="my-4">
+    <h1 class="text-center" style="color: #2e2e2e">USER'S DASHBOARD</h1>
+  </div>
+
+  <!-- Quick Stats Bar -->
+  <div class="card shadow-sm rounded mb-4" style="background-color: #f4f1ea">
+    <div class="card-body">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <h5 style="color: #aa7a58">Total Fics</h5>
+          <p style="color: #2e2e2e">X</p>
+        </div>
+        <div class="col-md-3">
+          <h5 style="color: #aa7a58">Words Read</h5>
+          <p style="color: #2e2e2e">X</p>
+        </div>
+        <div class="col-md-3">
+          <h5 style="color: #aa7a58">Top Fandom</h5>
+          <p style="color: #2e2e2e">X</p>
+        </div>
+        <div class="col-md-3">
+          <h5 style="color: #aa7a58">Top Ship</h5>
+          <p style="color: #2e2e2e">X</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content: Top Row with two columns -->
+  <div class="row">
+    <!-- Left Column: Currently Reading and Recent Favorites -->
+    <div class="col-md-8">
+      <!-- Currently Reading Section -->
+      <div class="card shadow-sm rounded mb-4">
+        <div
+          class="card-header"
+          style="background-color: #f4f1ea; color: #aa7a58"
+        >
+          Currently Reading
+        </div>
+        <div class="card-body">
+          <div class="d-flex flex-wrap gap-3">
+            <!-- Placeholder Book Cover Card with overlay text -->
+            <div
+              class="card text-white"
+              style="width: 150px; position: relative"
+            >
+              <img
+                src="https://via.placeholder.com/150x220?text=Cover"
+                class="card-img"
+                alt="Book Cover"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end p-2"
+                style="background: rgba(0, 0, 0, 0.3)"
+              >
+                <h6 class="card-title mb-0" style="color: #f4f1ea">
+                  Fic Title
+                </h6>
+                <p class="card-text" style="color: #f4f1ea">Author Name</p>
+              </div>
+            </div>
+            <!-- Another placeholder card -->
+            <div
+              class="card text-white"
+              style="width: 150px; position: relative"
+            >
+              <img
+                src="https://via.placeholder.com/150x220?text=Cover"
+                class="card-img"
+                alt="Book Cover"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end p-2"
+                style="background: rgba(0, 0, 0, 0.3)"
+              >
+                <h6 class="card-title mb-0" style="color: #f4f1ea">
+                  Fic Title
+                </h6>
+                <p class="card-text" style="color: #f4f1ea">Author Name</p>
+              </div>
+            </div>
+            <!-- Add additional placeholder cards as needed -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Favorites Section -->
+      <div class="card shadow-sm rounded mb-4">
+        <div
+          class="card-header"
+          style="background-color: #f4f1ea; color: #aa7a58"
+        >
+          Recent Favorites
+        </div>
+        <div class="card-body">
+          <div class="d-flex flex-wrap gap-3">
+            <!-- Placeholder Book Cover Card with overlay text -->
+            <div
+              class="card text-white"
+              style="width: 150px; position: relative"
+            >
+              <img
+                src="https://via.placeholder.com/150x220?text=Cover"
+                class="card-img"
+                alt="Book Cover"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end p-2"
+                style="background: rgba(0, 0, 0, 0.3)"
+              >
+                <h6 class="card-title mb-0" style="color: #f4f1ea">
+                  Fic Title
+                </h6>
+                <p class="card-text" style="color: #f4f1ea">Author Name</p>
+              </div>
+            </div>
+            <!-- Another placeholder card -->
+            <div
+              class="card text-white"
+              style="width: 150px; position: relative"
+            >
+              <img
+                src="https://via.placeholder.com/150x220?text=Cover"
+                class="card-img"
+                alt="Book Cover"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end p-2"
+                style="background: rgba(0, 0, 0, 0.3)"
+              >
+                <h6 class="card-title mb-0" style="color: #f4f1ea">
+                  Fic Title
+                </h6>
+                <p class="card-text" style="color: #f4f1ea">Author Name</p>
+              </div>
+            </div>
+            <!-- Add additional placeholder cards as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Saved Searches -->
+    <div class="col-md-4">
+      <div class="card shadow-sm rounded mb-4">
+        <div
+          class="card-header"
+          style="background-color: #f4f1ea; color: #aa7a58"
+        >
+          Saved Searches
+        </div>
+        <div class="card-body">
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              style="background-color: #d8bfaa; color: #2e2e2e"
+            >
+              Search 1
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              style="background-color: #d8bfaa; color: #2e2e2e"
+            >
+              Search 2
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              style="background-color: #d8bfaa; color: #2e2e2e"
+            >
+              Search 3
+            </a>
+            <!-- Add more saved search buttons as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- To Be Read Section -->
+  <div class="card shadow-sm rounded mb-4">
+    <div class="card-header" style="background-color: #f4f1ea; color: #aa7a58">
+      To Be Read
+    </div>
+    <div class="card-body">
+      <div class="d-flex flex-wrap gap-3">
+        <!-- Horizontal card layout for To Be Read items -->
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://via.placeholder.com/150x220?text=Cover"
+                class="img-fluid rounded-start"
+                alt="Book Cover"
+              />
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="card-body">
+                <h6 class="card-title" style="color: #aa7a58">Fic Title</h6>
+                <p class="card-text" style="color: #2e2e2e">Author Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Another horizontal card -->
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://via.placeholder.com/150x220?text=Cover"
+                class="img-fluid rounded-start"
+                alt="Book Cover"
+              />
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="card-body">
+                <h6 class="card-title" style="color: #aa7a58">Fic Title</h6>
+                <p class="card-text" style="color: #2e2e2e">Author Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add additional horizontal cards as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Monthly Overview Section -->
+  <div class="card shadow-sm rounded mb-4">
+    <div class="card-header" style="background-color: #f4f1ea; color: #aa7a58">
+      This Month Overview
+    </div>
+    <div class="card-body">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/200x150?text=Pie+Chart"
+              class="card-img-top"
+              alt="Pie Chart"
+            />
+            <div class="card-body p-2">
+              <p class="card-text">Pie Chart</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/200x150?text=Line+Graph"
+              class="card-img-top"
+              alt="Line Graph"
+            />
+            <div class="card-body p-2">
+              <p class="card-text">Line Graph</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/200x150?text=Bar+Graph"
+              class="card-img-top"
+              alt="Bar Graph"
+            />
+            <div class="card-body p-2">
+              <p class="card-text">Bar Graph</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
